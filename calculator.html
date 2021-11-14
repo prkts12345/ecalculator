@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        
+
+        
+
+        <div class="key">
+
+            <h1>IKALKYUMO</h1>
+
+            <input type="text" id="result" disabled>
+
+            <div class="row">
+                <input type="button" value="AC" onclick="clr()" style="color: tomato;"/>
+                <input type="button" value="Del" onclick="del()" style="color: tomato;"/>
+                <input type="button" value="&percnt;" onclick="num('%')" style="color: tomato;"/>
+                <input type="button" value="&divide;" onclick="ops('/')" style="color: tomato;"/>
+            </div>
+
+            <div class="row">
+                <input type="button" value="7" onclick="num('7')"/>
+                <input type="button" value="8" onclick="num('8')"/>
+                <input type="button" value="9" onclick="num('9')"/>
+                <input type="button" value="&times;" onclick="ops('*')" style="color: tomato;"/>
+            </div>
+
+            <div>
+                <input type="button" value="4" onclick="num('4')"/>
+                <input type="button" value="5" onclick="num('5')"/>
+                <input type="button" value="6" onclick="num('6')"/>
+                <input type="button" value="&minus;" onclick="ops('-')" style="color: tomato;"/>
+            </div>
+
+            <div>
+                <input type="button" value="1" onclick="num('1')"/>
+                <input type="button" value="2" onclick="num('2')"/>
+                <input type="button" value="3" onclick="num('3')"/>
+                <input type="button" value="&plus;" onclick="ops('+')" style="color: tomato;"/>
+            </div>
+
+            <div>
+                <input type="button" value="&notin;" onclick="ops()" style="color: tomato;"/>
+                <input type="button" value="0" onclick="num('0')"/>
+                <input type="button" value="." onclick="ops('.')"/>
+                <input type="button" value="&equals;" onclick="solve('=')" style="color: tomato;" />   
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
